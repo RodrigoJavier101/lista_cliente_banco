@@ -10,7 +10,7 @@ from time import sleep
 from number_validation import validar_numero
 from math import trunc
 
-
+#  ho
 def main():
     lista_clientes = []
     count = 1
