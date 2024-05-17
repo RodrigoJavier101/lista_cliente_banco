@@ -25,10 +25,12 @@ def main():
     suma_tiempo_atnecion = 0
     while count <= nuevo_numero_cliente:
         tiempo_atencion = rand()
-        nombre = ""  # input("deme su nombre: ")
-        # if len(nombre) == 0:
-        #     nombre="no responde"
-        # print(f"{agregar_clientes(count, nombre)} time: {tiempo_atencion} min")
+
+        nombre = (input("deme su nombre: "))
+        if len(nombre) == 0:
+            nombre = "no responde"
+        print(f"{agregar_clientes(count, nombre)} time: {tiempo_atencion} min")
+
         suma_tiempo_atnecion += tiempo_atencion
         lista_clientes.append(
             [agregar_clientes(count, nombre), tiempo_atencion, round(suma_tiempo_atnecion / counter2, 2)])
